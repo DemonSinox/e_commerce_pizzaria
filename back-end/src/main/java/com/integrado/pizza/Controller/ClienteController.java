@@ -29,7 +29,7 @@ public class ClienteController {
                         cliente.getTelefone(),
                         cliente.getCpf()))
                 .collect(Collectors.toList()); // Converte a lista de clientes para uma lista de ClienteResponseDTO.
-        return ResponseEntity.ok(clienteDTOs); // Retorna a lista de clientes com status OK (200).
+        return ResponseEntity.ok(clienteDTOs); // Retorna a lista de clientes.
     }
 
     @GetMapping("/{id}") // Mapeia requisições GET para /api/clientes/{id}.

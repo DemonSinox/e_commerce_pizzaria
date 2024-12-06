@@ -9,13 +9,13 @@ public class Produtos {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_produto;
 
-    @Column(nullable = false, length = 100)
+    @Column(name = "nome", nullable = false, length = 100)
     private String nome;
 
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Column(name = "descricao", nullable = false, columnDefinition = "TEXT")
     private String descricao;
 
-    @Column(nullable = false)
+    @Column(name = "preco", nullable = false)
     private Double preco;
 
     @ManyToOne

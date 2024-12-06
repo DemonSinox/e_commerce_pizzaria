@@ -18,7 +18,7 @@ public class ProdutoPedido implements Serializable {
     @JoinColumn(name = "id_pedido")
     private Pedidos pedido;
 
-    @Column(nullable = false)
+    @Column(name = "quantidade",nullable = false)
     private int quantidade;
 
     // Getters e Setters

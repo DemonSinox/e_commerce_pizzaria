@@ -13,25 +13,25 @@ public class Endereco {
     @JoinColumn(name = "id_cliente", nullable = false)
     private Cliente id_cliente;
 
-    @Column(nullable = false, length = 50)
+    @Column(name = "descricaoLocal", nullable = false, length = 50)
     private String descricaoLocal;
 
-    @Column(nullable = false, length = 10)
+    @Column(name = "numero",nullable = false, length = 10)
     private String numero;
 
-    @Column(nullable = false, length = 50)
+    @Column(name = "bairro",nullable = false, length = 50)
     private String bairro;
 
-    @Column(nullable = false, length = 50)
+    @Column(name = "cidade",nullable = false, length = 50)
     private String cidade;
 
-    @Column(nullable = false, length = 50)
+    @Column(name = "estado",nullable = false, length = 50)
     private String estado;
 
-    @Column(nullable = false, length = 9)
+    @Column(name = "cep",nullable = false, length = 9)
     private String cep;
 
-    @Column(length = 100)
+    @Column(name = "complemento",length = 100)
     private String complemento;
 
     public String getCidade() {

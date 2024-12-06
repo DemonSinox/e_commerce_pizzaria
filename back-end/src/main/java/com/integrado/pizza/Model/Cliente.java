@@ -10,16 +10,16 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_cliente;
 
-    @Column(nullable = false, length = 100)
+    @Column(name = "nome",nullable = false, length = 100)
     private String nome;
 
-    @Column(nullable = false, unique = true, length = 100)
+    @Column(name = "email",nullable = false, unique = true, length = 100)
     private String email;
 
-    @Column(length = 15)
+    @Column(name = "telefone",length = 15)
     private String telefone;
 
-    @Column(unique = true, length = 14)
+    @Column(name = "cpf",unique = true, length = 14)
     private String cpf;
 
     public String getTelefone() {

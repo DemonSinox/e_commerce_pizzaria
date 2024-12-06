@@ -18,7 +18,7 @@ public class Pagamento {
     @JoinColumn(name = "id_forma_pagamento", nullable = false)
     private FormaPagamento id_forma_pagamento;
 
-    @Column(nullable = false)
+    @Column(name = "valor_total",nullable = false)
     private Double valor_total;
 
     @Column(name = "data_pagamento", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
